@@ -1,0 +1,43 @@
+{
+  "name": "billbuddy",
+  "version": "1.0.0",
+  "description": "A Splitwise clone for managing shared expenses",
+  "main": "server.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "client": "cd client && vite",
+    "dev:full": "concurrently \"npm run dev\" \"npm run client\"",
+    "build": "cd client && vite build",
+    "preview": "cd client && vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^7.0.2",
+    "@mui/material": "^7.0.2",
+    "axios": "^1.8.4",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "formik": "^2.4.6",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.0",
+    "nodemailer": "^6.10.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-router-dom": "^7.5.1",
+    "validator": "^13.11.0",
+    "yup": "^1.6.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.4.1",
+    "concurrently": "^8.2.1",
+    "nodemon": "^3.0.1",
+    "vite": "^6.3.2"
+  }
+}
